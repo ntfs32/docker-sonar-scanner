@@ -1,7 +1,8 @@
-goistop/docker-sonar-scanner
+# docker-sonar-scanner
 
-Using on gitlab runner:
+- Using on gitlab runner:
 
+```
 sonarqube:
 stage: build
 image: notices/docker-sonar-scanner
@@ -20,5 +21,5 @@ script:
   -Dsonar.coverage.exclusions=. \
   -Dsonar.exclusions=**/dist/**,**/node_modules/**/*  
 tags:
-
 - tag1
+```
